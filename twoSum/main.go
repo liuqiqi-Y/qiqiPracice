@@ -24,6 +24,9 @@ func twoSum1(arr []int, target int) []index {
 	return result
 }
 func twoSum2(arr []int, target int) []index {
+	if len(arr) < 2 {
+		return nil
+	}
 	m := make(map[int]int)
 	result := []index{}
 	for i := 0; i < len(arr); i++ {
