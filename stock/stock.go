@@ -7,9 +7,7 @@
 	输入: [7,1,5,3,6,4]
 	输出: 7
 */
-package main
-
-import "fmt"
+package stock
 
 func maxProfit(prices []int) int {
 	sum := 0
@@ -20,9 +18,4 @@ func maxProfit(prices []int) int {
 		}
 	}
 	return sum
-}
-func main() {
-	prices := []int{7, 1, 5, 3, 6, 4}
-	val := maxProfit(prices)
-	fmt.Printf("%d\n", val)
 }

@@ -6,9 +6,7 @@
 	输入：[1,2,3]
 	输出：[1,2,4]
 */
-package main
-
-import "fmt"
+package plusOne
 
 func plusOne(arr []int) []int {
 	if arr == nil {
@@ -22,9 +20,4 @@ func plusOne(arr []int) []int {
 		arr[j] = 0
 	}
 	return append([]int{1}, arr...)
-}
-func main() {
-	arr := []int{1, 2, 3}
-	result := plusOne(arr)
-	fmt.Printf("%v\n", result)
 }

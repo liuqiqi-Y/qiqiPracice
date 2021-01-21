@@ -25,3 +25,16 @@ func climbStairs2(n int) int {
 	}
 	return climbStairs2(n-1) + climbStairs2(n-2)
 }
+func climbStairs3(n int) int {
+	if n == 1 || n == 2 {
+		return 1
+	}
+	pre := 1
+	next := 2
+	for i := 3; i <= n; i++ {
+		temp := pre + next
+		pre = next
+		next = temp
+	}
+	return next
+}
